@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "fiOlUa+bZit8+mti0vCYbli/mNDuIBgcDZmMGFw1CMY=",
+  "Source": "CA.WebHost",
+  "BasePath": "_content/CA.WebHost",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
