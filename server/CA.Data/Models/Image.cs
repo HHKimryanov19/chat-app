@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CA.Data
+namespace CA.Data.Models
 {
     public class Image
     {

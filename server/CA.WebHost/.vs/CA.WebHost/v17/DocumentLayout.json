@@ -3,23 +3,90 @@
   "WorkspaceRootPath": "F:\\chat-app\\server\\CA.WebHost\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D55E3F7E-6174-4ACA-9DCC-4745F15AC089}|..\\CA.Data\\CA.Data.csproj|f:\\chat-app\\server\\ca.data\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D55E3F7E-6174-4ACA-9DCC-4745F15AC089}|..\\CA.Data\\CA.Data.csproj|f:\\chat-app\\server\\ca.data\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D55E3F7E-6174-4ACA-9DCC-4745F15AC089}|..\\CA.Data\\CA.Data.csproj|f:\\chat-app\\server\\ca.data\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D55E3F7E-6174-4ACA-9DCC-4745F15AC089}|..\\CA.Data\\CA.Data.csproj|f:\\chat-app\\server\\ca.data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D55E3F7E-6174-4ACA-9DCC-4745F15AC089}|..\\CA.Data\\CA.Data.csproj|f:\\chat-app\\server\\ca.data\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D55E3F7E-6174-4ACA-9DCC-4745F15AC089}|..\\CA.Data\\CA.Data.csproj|f:\\chat-app\\server\\ca.data\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D55E3F7E-6174-4ACA-9DCC-4745F15AC089}|..\\CA.Data\\CA.Data.csproj|f:\\chat-app\\server\\ca.data\\configurations\\messageconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55E3F7E-6174-4ACA-9DCC-4745F15AC089}|..\\CA.Data\\CA.Data.csproj|f:\\chat-app\\server\\ca.data\\configurations\\chatconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8A2D09E6-318B-47D8-9886-788AE84C5354}|CA.WebHost.csproj|f:\\chat-app\\server\\ca.webhost\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{8A2D09E6-318B-47D8-9886-788AE84C5354}|CA.WebHost.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A2D09E6-318B-47D8-9886-788AE84C5354}|CA.WebHost.csproj|f:\\chat-app\\server\\ca.webhost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A2D09E6-318B-47D8-9886-788AE84C5354}|CA.WebHost.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55E3F7E-6174-4ACA-9DCC-4745F15AC089}|..\\CA.Data\\CA.Data.csproj|f:\\chat-app\\server\\ca.data\\configurations\\imageconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55E3F7E-6174-4ACA-9DCC-4745F15AC089}|..\\CA.Data\\CA.Data.csproj|f:\\chat-app\\server\\ca.data\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55E3F7E-6174-4ACA-9DCC-4745F15AC089}|..\\CA.Data\\CA.Data.csproj|f:\\chat-app\\server\\ca.data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79394C9F-7C06-468C-A54E-D152B452BD79}|..\\CA.Services\\CA.Services.csproj|f:\\chat-app\\server\\ca.services\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75C5F06D-452D-4D37-B8D9-DF0616E5AE6C}|..\\CA.Shared\\CA.Shared.csproj|f:\\chat-app\\server\\ca.shared\\dtos\\outputmodels\\userom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75C5F06D-452D-4D37-B8D9-DF0616E5AE6C}|..\\CA.Shared\\CA.Shared.csproj|f:\\chat-app\\server\\ca.shared\\dtos\\outputmodels\\messageom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75C5F06D-452D-4D37-B8D9-DF0616E5AE6C}|..\\CA.Shared\\CA.Shared.csproj|f:\\chat-app\\server\\ca.shared\\dtos\\outputmodels\\imageom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75C5F06D-452D-4D37-B8D9-DF0616E5AE6C}|..\\CA.Shared\\CA.Shared.csproj|f:\\chat-app\\server\\ca.shared\\dtos\\outputmodels\\chatom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75C5F06D-452D-4D37-B8D9-DF0616E5AE6C}|..\\CA.Shared\\CA.Shared.csproj|f:\\chat-app\\server\\ca.shared\\dtos\\inputmodels\\userim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75C5F06D-452D-4D37-B8D9-DF0616E5AE6C}|..\\CA.Shared\\CA.Shared.csproj|f:\\chat-app\\server\\ca.shared\\dtos\\inputmodels\\messageim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75C5F06D-452D-4D37-B8D9-DF0616E5AE6C}|..\\CA.Shared\\CA.Shared.csproj|f:\\chat-app\\server\\ca.shared\\dtos\\inputmodels\\loginim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75C5F06D-452D-4D37-B8D9-DF0616E5AE6C}|..\\CA.Shared\\CA.Shared.csproj|f:\\chat-app\\server\\ca.shared\\dtos\\inputmodels\\imageim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75C5F06D-452D-4D37-B8D9-DF0616E5AE6C}|..\\CA.Shared\\CA.Shared.csproj|f:\\chat-app\\server\\ca.shared\\dtos\\inputmodels\\chatim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79394C9F-7C06-468C-A54E-D152B452BD79}|..\\CA.Services\\CA.Services.csproj|f:\\chat-app\\server\\ca.services\\implementations\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79394C9F-7C06-468C-A54E-D152B452BD79}|..\\CA.Services\\CA.Services.csproj|f:\\chat-app\\server\\ca.services\\implementations\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79394C9F-7C06-468C-A54E-D152B452BD79}|..\\CA.Services\\CA.Services.csproj|f:\\chat-app\\server\\ca.services\\implementations\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79394C9F-7C06-468C-A54E-D152B452BD79}|..\\CA.Services\\CA.Services.csproj|f:\\chat-app\\server\\ca.services\\contracts\\ichatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55E3F7E-6174-4ACA-9DCC-4745F15AC089}|..\\CA.Data\\CA.Data.csproj|f:\\chat-app\\server\\ca.data\\models\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79394C9F-7C06-468C-A54E-D152B452BD79}|..\\CA.Services\\CA.Services.csproj|f:\\chat-app\\server\\ca.services\\contracts\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79394C9F-7C06-468C-A54E-D152B452BD79}|..\\CA.Services\\CA.Services.csproj|f:\\chat-app\\server\\ca.services\\contracts\\imessageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55E3F7E-6174-4ACA-9DCC-4745F15AC089}|..\\CA.Data\\CA.Data.csproj|f:\\chat-app\\server\\ca.data\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55E3F7E-6174-4ACA-9DCC-4745F15AC089}|..\\CA.Data\\CA.Data.csproj|f:\\chat-app\\server\\ca.data\\models\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,42 +96,315 @@
       "DocumentGroups": [
         {
           "DockedWidth": 236,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Image.cs",
-              "DocumentMoniker": "F:\\chat-app\\server\\CA.Data\\Image.cs",
-              "RelativeDocumentMoniker": "..\\CA.Data\\Image.cs",
-              "ToolTip": "F:\\chat-app\\server\\CA.Data\\Image.cs",
-              "RelativeToolTip": "..\\CA.Data\\Image.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "UserConfiguration.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Data\\Configurations\\UserConfiguration.cs",
+              "RelativeDocumentMoniker": "..\\CA.Data\\Configurations\\UserConfiguration.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Data\\Configurations\\UserConfiguration.cs",
+              "RelativeToolTip": "..\\CA.Data\\Configurations\\UserConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T15:11:38.13Z",
+              "WhenOpened": "2025-03-18T21:10:53.006Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Message.cs",
-              "DocumentMoniker": "F:\\chat-app\\server\\CA.Data\\Message.cs",
-              "RelativeDocumentMoniker": "..\\CA.Data\\Message.cs",
-              "ToolTip": "F:\\chat-app\\server\\CA.Data\\Message.cs",
-              "RelativeToolTip": "..\\CA.Data\\Message.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.WebHost\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.WebHost\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAADwvyUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T15:10:21.77Z",
+              "WhenOpened": "2025-03-18T20:59:40.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Data\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "..\\CA.Data\\DependencyInjection.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Data\\DependencyInjection.cs",
+              "RelativeToolTip": "..\\CA.Data\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T20:46:58.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Services\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "..\\CA.Services\\DependencyInjection.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Services\\DependencyInjection.cs",
+              "RelativeToolTip": "..\\CA.Services\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T20:46:07.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "..\\CA.Data\\ApplicationDbContext.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "..\\CA.Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T10:02:08.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChatConfiguration.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Data\\Configurations\\ChatConfiguration.cs",
+              "RelativeDocumentMoniker": "..\\CA.Data\\Configurations\\ChatConfiguration.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Data\\Configurations\\ChatConfiguration.cs",
+              "RelativeToolTip": "..\\CA.Data\\Configurations\\ChatConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T20:39:44.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ImageConfiguration.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Data\\Configurations\\ImageConfiguration.cs",
+              "RelativeDocumentMoniker": "..\\CA.Data\\Configurations\\ImageConfiguration.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Data\\Configurations\\ImageConfiguration.cs",
+              "RelativeToolTip": "..\\CA.Data\\Configurations\\ImageConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T20:42:56.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.WebHost\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "F:\\chat-app\\server\\CA.WebHost\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-17T09:58:25.142Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "MessageConfiguration.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Data\\Configurations\\MessageConfiguration.cs",
+              "RelativeDocumentMoniker": "..\\CA.Data\\Configurations\\MessageConfiguration.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Data\\Configurations\\MessageConfiguration.cs",
+              "RelativeToolTip": "..\\CA.Data\\Configurations\\MessageConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T20:40:19.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Data\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "..\\CA.Data\\ApplicationUser.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Data\\ApplicationUser.cs",
+              "RelativeToolTip": "..\\CA.Data\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T14:52:06.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ChatOM.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Shared\\DTOs\\OutputModels\\ChatOM.cs",
+              "RelativeDocumentMoniker": "..\\CA.Shared\\DTOs\\OutputModels\\ChatOM.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Shared\\DTOs\\OutputModels\\ChatOM.cs",
+              "RelativeToolTip": "..\\CA.Shared\\DTOs\\OutputModels\\ChatOM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T20:33:08.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserIM.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Shared\\DTOs\\InputModels\\UserIM.cs",
+              "RelativeDocumentMoniker": "..\\CA.Shared\\DTOs\\InputModels\\UserIM.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Shared\\DTOs\\InputModels\\UserIM.cs",
+              "RelativeToolTip": "..\\CA.Shared\\DTOs\\InputModels\\UserIM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T20:32:27.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MessageIM.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Shared\\DTOs\\InputModels\\MessageIM.cs",
+              "RelativeDocumentMoniker": "..\\CA.Shared\\DTOs\\InputModels\\MessageIM.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Shared\\DTOs\\InputModels\\MessageIM.cs",
+              "RelativeToolTip": "..\\CA.Shared\\DTOs\\InputModels\\MessageIM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T20:31:08.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoginIM.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Shared\\DTOs\\InputModels\\LoginIM.cs",
+              "RelativeDocumentMoniker": "..\\CA.Shared\\DTOs\\InputModels\\LoginIM.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Shared\\DTOs\\InputModels\\LoginIM.cs",
+              "RelativeToolTip": "..\\CA.Shared\\DTOs\\InputModels\\LoginIM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T20:32:41.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ImageIM.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Shared\\DTOs\\InputModels\\ImageIM.cs",
+              "RelativeDocumentMoniker": "..\\CA.Shared\\DTOs\\InputModels\\ImageIM.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Shared\\DTOs\\InputModels\\ImageIM.cs",
+              "RelativeToolTip": "..\\CA.Shared\\DTOs\\InputModels\\ImageIM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T20:31:40.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ChatIM.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Shared\\DTOs\\InputModels\\ChatIM.cs",
+              "RelativeDocumentMoniker": "..\\CA.Shared\\DTOs\\InputModels\\ChatIM.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Shared\\DTOs\\InputModels\\ChatIM.cs",
+              "RelativeToolTip": "..\\CA.Shared\\DTOs\\InputModels\\ChatIM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T20:32:07.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MessageService.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Services\\Implementations\\MessageService.cs",
+              "RelativeDocumentMoniker": "..\\CA.Services\\Implementations\\MessageService.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Services\\Implementations\\MessageService.cs",
+              "RelativeToolTip": "..\\CA.Services\\Implementations\\MessageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T20:38:05.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ImageService.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Services\\Implementations\\ImageService.cs",
+              "RelativeDocumentMoniker": "..\\CA.Services\\Implementations\\ImageService.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Services\\Implementations\\ImageService.cs",
+              "RelativeToolTip": "..\\CA.Services\\Implementations\\ImageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T20:38:30.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ChatService.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Services\\Implementations\\ChatService.cs",
+              "RelativeDocumentMoniker": "..\\CA.Services\\Implementations\\ChatService.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Services\\Implementations\\ChatService.cs",
+              "RelativeToolTip": "..\\CA.Services\\Implementations\\ChatService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T20:38:59.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IChatService.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Services\\Contracts\\IChatService.cs",
+              "RelativeDocumentMoniker": "..\\CA.Services\\Contracts\\IChatService.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Services\\Contracts\\IChatService.cs",
+              "RelativeToolTip": "..\\CA.Services\\Contracts\\IChatService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T20:36:42.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ImageOM.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Shared\\DTOs\\OutputModels\\ImageOM.cs",
+              "RelativeDocumentMoniker": "..\\CA.Shared\\DTOs\\OutputModels\\ImageOM.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Shared\\DTOs\\OutputModels\\ImageOM.cs",
+              "RelativeToolTip": "..\\CA.Shared\\DTOs\\OutputModels\\ImageOM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T20:32:54.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MessageOM.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Shared\\DTOs\\OutputModels\\MessageOM.cs",
+              "RelativeDocumentMoniker": "..\\CA.Shared\\DTOs\\OutputModels\\MessageOM.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Shared\\DTOs\\OutputModels\\MessageOM.cs",
+              "RelativeToolTip": "..\\CA.Shared\\DTOs\\OutputModels\\MessageOM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T20:33:34.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserOM.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Shared\\DTOs\\OutputModels\\UserOM.cs",
+              "RelativeDocumentMoniker": "..\\CA.Shared\\DTOs\\OutputModels\\UserOM.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Shared\\DTOs\\OutputModels\\UserOM.cs",
+              "RelativeToolTip": "..\\CA.Shared\\DTOs\\OutputModels\\UserOM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T20:33:19.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "Chat.cs",
-              "DocumentMoniker": "F:\\chat-app\\server\\CA.Data\\Chat.cs",
-              "RelativeDocumentMoniker": "..\\CA.Data\\Chat.cs",
-              "ToolTip": "F:\\chat-app\\server\\CA.Data\\Chat.cs",
-              "RelativeToolTip": "..\\CA.Data\\Chat.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Data\\Models\\Chat.cs",
+              "RelativeDocumentMoniker": "..\\CA.Data\\Models\\Chat.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Data\\Models\\Chat.cs",
+              "RelativeToolTip": "..\\CA.Data\\Models\\Chat.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T15:09:34.076Z",
@@ -72,41 +412,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "F:\\chat-app\\server\\CA.Data\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "..\\CA.Data\\ApplicationUser.cs",
-              "ToolTip": "F:\\chat-app\\server\\CA.Data\\ApplicationUser.cs",
-              "RelativeToolTip": "..\\CA.Data\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAA0AAAAAAAAAA==",
+              "DocumentIndex": 24,
+              "Title": "IImageService.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Services\\Contracts\\IImageService.cs",
+              "RelativeDocumentMoniker": "..\\CA.Services\\Contracts\\IImageService.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Services\\Contracts\\IImageService.cs",
+              "RelativeToolTip": "..\\CA.Services\\Contracts\\IImageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T14:52:06.93Z",
+              "WhenOpened": "2025-03-18T20:37:36.283Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "F:\\chat-app\\server\\CA.Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "..\\CA.Data\\ApplicationDbContext.cs",
-              "ToolTip": "F:\\chat-app\\server\\CA.Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "..\\CA.Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
+              "DocumentIndex": 25,
+              "Title": "IMessageService.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Services\\Contracts\\IMessageService.cs",
+              "RelativeDocumentMoniker": "..\\CA.Services\\Contracts\\IMessageService.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Services\\Contracts\\IMessageService.cs",
+              "RelativeToolTip": "..\\CA.Services\\Contracts\\IMessageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T10:02:08.702Z",
+              "WhenOpened": "2025-03-18T20:37:08.976Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "F:\\chat-app\\server\\CA.WebHost\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "F:\\chat-app\\server\\CA.WebHost\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-17T09:58:25.142Z",
+              "DocumentIndex": 27,
+              "Title": "Image.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Data\\Models\\Image.cs",
+              "RelativeDocumentMoniker": "..\\CA.Data\\Models\\Image.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Data\\Models\\Image.cs",
+              "RelativeToolTip": "..\\CA.Data\\Models\\Image.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T15:11:38.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Message.cs",
+              "DocumentMoniker": "F:\\chat-app\\server\\CA.Data\\Models\\Message.cs",
+              "RelativeDocumentMoniker": "..\\CA.Data\\Models\\Message.cs",
+              "ToolTip": "F:\\chat-app\\server\\CA.Data\\Models\\Message.cs",
+              "RelativeToolTip": "..\\CA.Data\\Models\\Message.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T15:10:21.77Z",
               "EditorCaption": ""
             }
           ]

@@ -25,4 +25,10 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CA.Data\CA.Data.csproj" />
+    <ProjectReference Include="..\CA.Services\CA.Services.csproj" />
+    <ProjectReference Include="..\CA.Shared\CA.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

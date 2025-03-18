@@ -1,4 +1,6 @@
 
+using CA.Data;
+
 namespace CA.WebHost
 {
     public class Program
@@ -10,7 +12,8 @@ namespace CA.WebHost
             // Add services to the container.
 
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+            builder.Services.AddDataLayer(builder.Configuration);
+
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
@@ -26,7 +29,6 @@ namespace CA.WebHost
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 

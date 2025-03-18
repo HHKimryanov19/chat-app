@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using CA.Data.Models;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,10 @@ namespace CA.Data
 {
     public class ApplicationUser: IdentityUser<Guid>
     {
+        public ICollection<Message> Messages { get; set; } = new List<Message>();
+
+        public ICollection<Image> Images { get; set; } = new List<Image>();
+
+        public ICollection<Chat> Chats { get; set; } = new List<Chat>();
     }
 }

@@ -20,4 +20,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CA.Data\CA.Data.csproj" />
+  </ItemGroup>
+
 </Project>
