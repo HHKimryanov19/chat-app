@@ -13,7 +13,18 @@ namespace CA.Data.Configurations
     {
         public void Configure(EntityTypeBuilder<Image> builder)
         {
+            builder
+                .Property(i => i.Picture)
+                .IsRequired();
 
+            builder
+                .HasOne(i => i.SendBy)
+                .WithMany(u => u.Images)
+                .HasForeignKey(i => i.UserId);
+
+            builder
+                .Property(i => i.SendOn)
+                .IsRequired();
         }
     }
 }

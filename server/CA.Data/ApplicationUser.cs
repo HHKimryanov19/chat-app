@@ -14,6 +14,8 @@ namespace CA.Data
 
         public ICollection<Image> Images { get; set; } = new List<Image>();
 
-        public ICollection<Chat> Chats { get; set; } = new List<Chat>();
+        public ICollection<Chat> Recieved { get; set; } = new List<Chat>();
+
+        public ICollection<Chat> Sent { get; set; } = new List<Chat>();
     }
 }

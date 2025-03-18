@@ -14,8 +14,18 @@ namespace CA.Data.Configurations
         public void Configure(EntityTypeBuilder<Message> builder)
         {
             builder
-                .HasOne(m => m.User)
-                .WithMany(u => u.Messages);
+                .HasOne(m => m.SendBy)
+                .WithMany(u => u.Messages)
+                .HasForeignKey(m => m.UserId);
+
+            builder
+                .Property(m => m.Text)
+                .IsRequired()
+                .HasMaxLength(1000);
+
+            builder
+                .Property(m => m.SendOn)
+                .IsRequired();
         }
     }
 }

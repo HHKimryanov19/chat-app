@@ -1,0 +1,15 @@
+F:\chat-app\server\CA.Data\bin\Debug\net8.0\CA.Data.deps.json
+F:\chat-app\server\CA.Data\bin\Debug\net8.0\CA.Data.runtimeconfig.json
+F:\chat-app\server\CA.Data\bin\Debug\net8.0\CA.Data.dll
+F:\chat-app\server\CA.Data\bin\Debug\net8.0\CA.Data.pdb
+F:\chat-app\server\CA.Data\obj\Debug\net8.0\CA.Data.csproj.AssemblyReference.cache
+F:\chat-app\server\CA.Data\obj\Debug\net8.0\CA.Data.GeneratedMSBuildEditorConfig.editorconfig
+F:\chat-app\server\CA.Data\obj\Debug\net8.0\CA.Data.AssemblyInfoInputs.cache
+F:\chat-app\server\CA.Data\obj\Debug\net8.0\CA.Data.AssemblyInfo.cs
+F:\chat-app\server\CA.Data\obj\Debug\net8.0\CA.Data.csproj.CoreCompileInputs.cache
+F:\chat-app\server\CA.Data\obj\Debug\net8.0\CA.Data.sourcelink.json
+F:\chat-app\server\CA.Data\obj\Debug\net8.0\CA.Data.dll
+F:\chat-app\server\CA.Data\obj\Debug\net8.0\refint\CA.Data.dll
+F:\chat-app\server\CA.Data\obj\Debug\net8.0\CA.Data.pdb
+F:\chat-app\server\CA.Data\obj\Debug\net8.0\CA.Data.genruntimeconfig.cache
+F:\chat-app\server\CA.Data\obj\Debug\net8.0\ref\CA.Data.dll

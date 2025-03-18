@@ -8,14 +8,12 @@ namespace CA.Data.Models
 {
     public class Message
     {
-        public ApplicationUser? User { get; set; }
+        public ApplicationUser? SendBy { get; set; }
 
         public Guid UserId { get; set; }
 
         public string? Text { get; set; }
 
         public DateTime SendOn { get; set; }
-
-        public string? Status { get; set; }
     }
 }

@@ -19,7 +19,5 @@ namespace CA.Data.Models
         public DateTime LastMessageDate { get; set; }
 
         public byte[] Image { get; set; } = default!;
-
-        public string? Status { get; set; }
     }
 }

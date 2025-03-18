@@ -13,7 +13,22 @@ namespace CA.Data.Configurations
     {
         public void Configure(EntityTypeBuilder<ApplicationUser> builder)
         {
+            builder
+                .HasMany(u => u.Messages)
+                .WithOne(m => m.SendBy);
 
+            builder
+                .HasMany(u => u.Images)
+                .WithOne(i => i.SendBy);
+
+            builder
+                .HasMany(u => u.Sent)
+                .WithOne(m => m.FirstUser);
+
+
+            builder
+                .HasMany(u => u.Recieved)
+                .WithOne(m => m.SecondUser);
         }
     }
 }

@@ -13,7 +13,24 @@ namespace CA.Data.Configurations
     {
         public void Configure(EntityTypeBuilder<Chat> builder)
         {
-            throw new NotImplementedException();
+            builder
+                .HasOne(c => c.FirstUser)
+                .WithMany(u => u.Sent)
+                .HasForeignKey(c => c.FirstUserId);
+
+
+            builder
+                .HasOne(c => c.SecondUser)
+                .WithMany(u => u.Recieved)
+                .HasForeignKey(c => c.SecondUserId);
+
+            builder
+                .Property(c => c.LastMessageDate)
+                .IsRequired();
+
+            builder
+                .Property(c => c.Image)
+                .IsRequired(false);
         }
     }
 }
