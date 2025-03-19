@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CA.Data\CA.Data.csproj" />
+    <ProjectReference Include="..\CA.Shared\CA.Shared.csproj" />
   </ItemGroup>
 
 </Project>

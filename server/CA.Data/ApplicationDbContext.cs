@@ -12,12 +12,21 @@ namespace CA.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser,IdentityRole<Guid>,Guid>
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options){}
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, ICurrentUser currentUser = default!): base(options)
+        {
+            this.currentUser = currentUser;
+        }
 
         public DbSet<Chat> Chats { get; set; }
 
         public DbSet<Message> Messages { get; set; }
 
         public DbSet<Image> Images { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.ApplyConfigurationsFromAssembly(this.GetType().Assembly);
+            base.OnModelCreating(builder);
+        }
     }
 }

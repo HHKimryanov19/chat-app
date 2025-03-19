@@ -19,6 +19,16 @@ namespace CA.WebHost
 
             var app = builder.Build();
 
+            try
+            {
+                var dbContext = app.Services.CreateScope().ServiceProvider.GetRequiredService<ApplicationDbContext>();
+                dbContext.Database.EnsureCreated();
+            }
+            catch (Exception ex)
+            {
+                app.Logger.LogInformation("Database creation failed");
+            }
+
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
