@@ -26,6 +26,11 @@ namespace CA.Data.Configurations
             builder
                 .Property(m => m.SendOn)
                 .IsRequired();
+
+            builder
+                .HasOne(m => m.Chat)
+                .WithMany(c => c.Messages)
+                .HasForeignKey(m => m.ChatId);
         }
     }
 }

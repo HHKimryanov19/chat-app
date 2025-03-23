@@ -16,3 +16,23 @@ F:\chat-app\server\CA.Services\obj\Debug\net8.0\refint\CA.Services.dll
 F:\chat-app\server\CA.Services\obj\Debug\net8.0\CA.Services.pdb
 F:\chat-app\server\CA.Services\obj\Debug\net8.0\CA.Services.genruntimeconfig.cache
 F:\chat-app\server\CA.Services\obj\Debug\net8.0\ref\CA.Services.dll
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Services\bin\Debug\net8.0\CA.Services.deps.json
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Services\bin\Debug\net8.0\CA.Services.runtimeconfig.json
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Services\bin\Debug\net8.0\CA.Services.dll
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Services\bin\Debug\net8.0\CA.Services.pdb
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Services\bin\Debug\net8.0\CA.Data.dll
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Services\bin\Debug\net8.0\CA.Shared.dll
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Services\bin\Debug\net8.0\CA.Data.pdb
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Services\bin\Debug\net8.0\CA.Shared.pdb
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Services\obj\Debug\net8.0\CA.Services.csproj.AssemblyReference.cache
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Services\obj\Debug\net8.0\CA.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Services\obj\Debug\net8.0\CA.Services.AssemblyInfoInputs.cache
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Services\obj\Debug\net8.0\CA.Services.AssemblyInfo.cs
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Services\obj\Debug\net8.0\CA.Services.csproj.CoreCompileInputs.cache
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Services\obj\Debug\net8.0\CA.Services.sourcelink.json
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Services\obj\Debug\net8.0\CA.Servi.DC944DCD.Up2Date
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Services\obj\Debug\net8.0\CA.Services.dll
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Services\obj\Debug\net8.0\refint\CA.Services.dll
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Services\obj\Debug\net8.0\CA.Services.pdb
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Services\obj\Debug\net8.0\CA.Services.genruntimeconfig.cache
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Services\obj\Debug\net8.0\ref\CA.Services.dll

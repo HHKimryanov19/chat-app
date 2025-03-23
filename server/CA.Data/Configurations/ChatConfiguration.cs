@@ -29,8 +29,16 @@ namespace CA.Data.Configurations
                 .IsRequired();
 
             builder
-                .Property(c => c.Image)
+                .Property(c => c.Picture)
                 .IsRequired(false);
+
+            builder
+                .HasMany(c => c.Messages)
+                .WithOne(m => m.Chat);
+
+            builder
+                .HasMany(c => c.Media)
+                .WithOne(i => i.Chat);
         }
     }
 }

@@ -1,9 +1,18 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "CA.WebHost",
-    "version": "1.0"
+    "title": "API",
+    "version": "v1"
   },
   "paths": { },
-  "components": { }
+  "components": {
+    "securitySchemes": {
+      "oauth2": {
+        "type": "apiKey",
+        "description": "Please enter a valid token",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  }
 }

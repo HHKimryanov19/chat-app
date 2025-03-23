@@ -14,7 +14,7 @@ namespace CA.Data.Configurations
         public void Configure(EntityTypeBuilder<Image> builder)
         {
             builder
-                .Property(i => i.Picture)
+                .Property(i => i.Content)
                 .IsRequired();
 
             builder
@@ -25,6 +25,11 @@ namespace CA.Data.Configurations
             builder
                 .Property(i => i.SendOn)
                 .IsRequired();
+
+            builder
+                .HasOne(i => i.Chat)
+                .WithMany(c => c.Media)
+                .HasForeignKey(i => i.ChatId);
         }
     }
 }

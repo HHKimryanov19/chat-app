@@ -13,3 +13,18 @@ F:\chat-app\server\CA.Shared\obj\Debug\net8.0\refint\CA.Shared.dll
 F:\chat-app\server\CA.Shared\obj\Debug\net8.0\CA.Shared.pdb
 F:\chat-app\server\CA.Shared\obj\Debug\net8.0\CA.Shared.genruntimeconfig.cache
 F:\chat-app\server\CA.Shared\obj\Debug\net8.0\ref\CA.Shared.dll
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Shared\bin\Debug\net8.0\CA.Shared.deps.json
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Shared\bin\Debug\net8.0\CA.Shared.runtimeconfig.json
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Shared\bin\Debug\net8.0\CA.Shared.dll
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Shared\bin\Debug\net8.0\CA.Shared.pdb
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Shared\obj\Debug\net8.0\CA.Shared.csproj.AssemblyReference.cache
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Shared\obj\Debug\net8.0\CA.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Shared\obj\Debug\net8.0\CA.Shared.AssemblyInfoInputs.cache
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Shared\obj\Debug\net8.0\CA.Shared.AssemblyInfo.cs
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Shared\obj\Debug\net8.0\CA.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Shared\obj\Debug\net8.0\CA.Shared.sourcelink.json
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Shared\obj\Debug\net8.0\CA.Shared.dll
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Shared\obj\Debug\net8.0\refint\CA.Shared.dll
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Shared\obj\Debug\net8.0\CA.Shared.pdb
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Shared\obj\Debug\net8.0\CA.Shared.genruntimeconfig.cache
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.Shared\obj\Debug\net8.0\ref\CA.Shared.dll
