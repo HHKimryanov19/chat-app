@@ -10,6 +10,12 @@ namespace CA.Data
 {
     public class ApplicationUser: IdentityUser<Guid>
     {
+        public string? FirstName { get; set; }
+
+        public string? SecondName { get; set; }
+
+        public int Age { get; set; }
+
         public ICollection<Message> Messages { get; set; } = new List<Message>();
 
         public ICollection<Image> Images { get; set; } = new List<Image>();

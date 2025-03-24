@@ -19,6 +19,7 @@ namespace CA.Services
             services.AddScoped<IMessageService, MessageService>();
             services.AddScoped<IImageService, ImageService>();
             services.AddScoped<ICurrentUser, CurrentUser>();
+            services.AddScoped<IAuthService, AuthService>();
 
             return services;
         }

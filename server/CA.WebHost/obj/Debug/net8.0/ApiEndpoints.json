@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "ContainingType": "CA.WebHost.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "auth/user-login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginModel",
+        "Type": "CA.Shared.DTOs.InputModels.LoginIM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CA.WebHost.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "auth/user-register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userIM",
+        "Type": "CA.Shared.DTOs.InputModels.UserIM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

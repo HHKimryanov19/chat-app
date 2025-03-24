@@ -29,6 +29,20 @@ namespace CA.Data.Configurations
             builder
                 .HasMany(u => u.Recieved)
                 .WithOne(m => m.SecondUser);
+
+            builder
+                .Property(u => u.FirstName)
+                .IsRequired();
+
+
+            builder
+                .Property(u => u.SecondName)
+                .IsRequired();
+
+
+            builder
+                .Property(u => u.Age)
+                .IsRequired();
         }
     }
 }
