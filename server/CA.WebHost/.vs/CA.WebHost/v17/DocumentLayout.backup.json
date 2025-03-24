@@ -3,11 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Hristiyan Kimryanov\\Desktop\\chat-app\\server\\CA.WebHost\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8A2D09E6-318B-47D8-9886-788AE84C5354}|CA.WebHost.csproj|c:\\users\\hristiyan kimryanov\\desktop\\chat-app\\server\\ca.webhost\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A2D09E6-318B-47D8-9886-788AE84C5354}|CA.WebHost.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{79394C9F-7C06-468C-A54E-D152B452BD79}|..\\CA.Services\\CA.Services.csproj|c:\\users\\hristiyan kimryanov\\desktop\\chat-app\\server\\ca.services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A2D09E6-318B-47D8-9886-788AE84C5354}|CA.WebHost.csproj|c:\\users\\hristiyan kimryanov\\desktop\\chat-app\\server\\ca.webhost\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A2D09E6-318B-47D8-9886-788AE84C5354}|CA.WebHost.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D55E3F7E-6174-4ACA-9DCC-4745F15AC089}|..\\CA.Data\\CA.Data.csproj|c:\\users\\hristiyan kimryanov\\desktop\\chat-app\\server\\ca.data\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75C5F06D-452D-4D37-B8D9-DF0616E5AE6C}|..\\CA.Shared\\CA.Shared.csproj|c:\\users\\hristiyan kimryanov\\desktop\\chat-app\\server\\ca.shared\\dtos\\inputmodels\\loginim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -20,9 +23,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{D55E3F7E-6174-4ACA-9DCC-4745F15AC089}|..\\CA.Data\\CA.Data.csproj|c:\\users\\hristiyan kimryanov\\desktop\\chat-app\\server\\ca.data\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D55E3F7E-6174-4ACA-9DCC-4745F15AC089}|..\\CA.Data\\CA.Data.csproj|c:\\users\\hristiyan kimryanov\\desktop\\chat-app\\server\\ca.data\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75C5F06D-452D-4D37-B8D9-DF0616E5AE6C}|..\\CA.Shared\\CA.Shared.csproj|c:\\users\\hristiyan kimryanov\\desktop\\chat-app\\server\\ca.shared\\dtos\\inputmodels\\messageim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -44,7 +44,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 48,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -52,7 +52,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UserConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Hristiyan Kimryanov\\Desktop\\chat-app\\server\\CA.Data\\Configurations\\UserConfiguration.cs",
               "RelativeDocumentMoniker": "..\\CA.Data\\Configurations\\UserConfiguration.cs",
@@ -78,46 +78,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\Hristiyan Kimryanov\\Desktop\\chat-app\\server\\CA.Services\\Implementations\\AuthService.cs",
               "RelativeDocumentMoniker": "..\\CA.Services\\Implementations\\AuthService.cs",
               "ToolTip": "C:\\Users\\Hristiyan Kimryanov\\Desktop\\chat-app\\server\\CA.Services\\Implementations\\AuthService.cs",
               "RelativeToolTip": "..\\CA.Services\\Implementations\\AuthService.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAApwCwAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAFkAAAAAAAAAAIAwwGkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T14:21:43.016Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\Hristiyan Kimryanov\\Desktop\\chat-app\\server\\CA.Data\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "..\\CA.Data\\ApplicationUser.cs",
               "ToolTip": "C:\\Users\\Hristiyan Kimryanov\\Desktop\\chat-app\\server\\CA.Data\\ApplicationUser.cs",
               "RelativeToolTip": "..\\CA.Data\\ApplicationUser.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T15:20:59.357Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Hristiyan Kimryanov\\Desktop\\chat-app\\server\\CA.WebHost\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\Hristiyan Kimryanov\\Desktop\\chat-app\\server\\CA.WebHost\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCsAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwCQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T14:49:09.784Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "UserIM.cs",
               "DocumentMoniker": "C:\\Users\\Hristiyan Kimryanov\\Desktop\\chat-app\\server\\CA.Shared\\DTOs\\InputModels\\UserIM.cs",
               "RelativeDocumentMoniker": "..\\CA.Shared\\DTOs\\InputModels\\UserIM.cs",
@@ -130,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LoginIM.cs",
               "DocumentMoniker": "C:\\Users\\Hristiyan Kimryanov\\Desktop\\chat-app\\server\\CA.Shared\\DTOs\\InputModels\\LoginIM.cs",
               "RelativeDocumentMoniker": "..\\CA.Shared\\DTOs\\InputModels\\LoginIM.cs",
@@ -143,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ImageIM.cs",
               "DocumentMoniker": "C:\\Users\\Hristiyan Kimryanov\\Desktop\\chat-app\\server\\CA.Shared\\DTOs\\InputModels\\ImageIM.cs",
               "RelativeDocumentMoniker": "..\\CA.Shared\\DTOs\\InputModels\\ImageIM.cs",

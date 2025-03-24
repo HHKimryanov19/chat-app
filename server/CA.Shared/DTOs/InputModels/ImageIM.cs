@@ -8,5 +8,8 @@ namespace CA.Shared.DTOs.InputModels
 {
     public class ImageIM
     {
+        public byte[] Content { get; set; } = default!;
+
+        public Guid ChatId { get; set; }
     }
 }
