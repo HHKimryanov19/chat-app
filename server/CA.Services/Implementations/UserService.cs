@@ -9,34 +9,34 @@ using System.Threading.Tasks;
 
 namespace CA.Services.Implementations
 {
-    public class MessageService : IMessageService
+    class UserService : IUserService
     {
-        public Task<bool> CreateMessage(MessageIM message)
+        public Task<UserOM> GetUserByEmail(string email)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> DeleteMessage(Guid messageId)
+        public Task<List<UserOM>> GetUserById(Guid Id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<List<MessageOM>> GetByChatId(Guid chatId)
+        public Task<UserOM> GetUserByUserName(string username)
         {
             throw new NotImplementedException();
         }
 
-        public Task<List<MessageOM>> GetByChatIdDate(Guid chatId, DateOnly startDate, DateOnly endDate)
+        public Task<List<UserOM>> GetUsers()
         {
             throw new NotImplementedException();
         }
 
-        public Task<List<MessageOM>> GetByChatIdUserId(Guid chatId, Guid userId)
+        public Task<bool> RemoveUser(string deleteString)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> UpdateMessage(MessageIM message, Guid messageId)
+        public Task<bool> UpdateUser(UserIM user)
         {
             throw new NotImplementedException();
         }

@@ -20,6 +20,7 @@ namespace CA.Services
             services.AddScoped<IImageService, ImageService>();
             services.AddScoped<ICurrentUser, CurrentUser>();
             services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<IUserService, UserService>();
 
             return services;
         }

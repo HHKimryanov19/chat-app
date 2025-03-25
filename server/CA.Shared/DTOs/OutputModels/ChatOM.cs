@@ -9,6 +9,8 @@ namespace CA.Shared.DTOs.OutputModels
 {
     public class ChatOM
     {
+        public Guid Id { get; set; }
+
         public Guid User { get; set; }
 
         public DateTime LastMessageDate { get; set; }
