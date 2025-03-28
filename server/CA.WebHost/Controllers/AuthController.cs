@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace CA.WebHost.Controllers
 {
     [ApiController]
-    [Route("/")]
+    [Route("[controller]")]
     public class AuthController
     {
         public readonly AuthService authServices;

@@ -13,14 +13,14 @@ namespace CA.Services.Contracts
     {
         Task<List<UserOM>> GetUsers();
 
-        Task<List<UserOM>> GetUserById(Guid Id);
+        Task<UserOM> GetUserById(Guid Id);
 
         Task<UserOM> GetUserByUserName(string username);
 
         Task<UserOM> GetUserByEmail(string email);
 
-        Task<bool> UpdateUser(UserIM user);
+        Task<bool> UpdateUser(Guid userId, UserIM user);
 
-        Task<bool> RemoveUser(string deleteString);
+        Task<bool> RemoveUser(Guid userId, string deleteString);
     }
 }
