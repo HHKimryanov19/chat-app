@@ -12,6 +12,8 @@ namespace CA.Services.Contracts
     {
         Task<List<ImageOM>> GetByChatId(Guid chatId);
 
+        Task<List<ImageOM>> GetByChatIdUserId(Guid chatId, Guid userId);
+
         Task<bool> Remove(Guid chatId, Guid imageId);
 
         Task<bool> Create(ImageIM image);

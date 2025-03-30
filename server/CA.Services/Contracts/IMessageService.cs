@@ -20,6 +20,6 @@ namespace CA.Services.Contracts
 
         Task<bool> UpdateMessage(MessageIM message, Guid messageId);
 
-        Task<bool> DeleteMessage(Guid messageId);
+        Task<bool> DeleteMessage(Guid messageId, Guid userId);
     }
 }

@@ -1,6 +1,9 @@
-﻿using CA.Services.Contracts;
+﻿using CA.Data;
+using CA.Services.Contracts;
+using CA.Shared;
 using CA.Shared.DTOs.InputModels;
 using CA.Shared.DTOs.OutputModels;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,12 +14,21 @@ namespace CA.Services.Implementations
 {
     public class MessageService : IMessageService
     {
+        private readonly ApplicationDbContext _context;
+        private readonly UserManager<ApplicationUser> _userManager;
+
+        public MessageService(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
+        {
+            _context = context;
+            _userManager = userManager;
+        }
+
         public Task<bool> CreateMessage(MessageIM message)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> DeleteMessage(Guid messageId)
+        public Task<bool> DeleteMessage(Guid messageId, Guid userId)
         {
             throw new NotImplementedException();
         }

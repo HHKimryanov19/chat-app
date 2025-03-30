@@ -1,5 +1,7 @@
-﻿using CA.Services.Contracts;
+﻿using CA.Data;
+using CA.Services.Contracts;
 using CA.Shared.DTOs.OutputModels;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +12,16 @@ namespace CA.Services.Implementations
 {
     public class ChatService : IChatService
     {
+
+        private readonly ApplicationDbContext _context;
+        private readonly UserManager<ApplicationUser> _userManager;
+
+        public ChatService(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
+        {
+            _context = context;
+            _userManager = userManager;
+        }
+
         public Task<bool> Create(Guid userId)
         {
             throw new NotImplementedException();

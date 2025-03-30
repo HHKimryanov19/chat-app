@@ -23,7 +23,6 @@ namespace CA.WebHost.Controllers
             try
             {
                 var token = await authServices.Login(loginModel);
-
                 return Results.Ok(token);
             }
             catch (Exception ex)
