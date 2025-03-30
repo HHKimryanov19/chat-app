@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace CA.Services.Implementations
 {
-    class UserService : IUserService
+    public class UserService : IUserService
     {
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
