@@ -1,5 +1,7 @@
 ﻿using CA.Data;
+using CA.Data.Models;
 using CA.Services.Implementations;
+using CA.Shared;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,27 +20,72 @@ namespace CA.WebHost.Controllers
         }
 
         [HttpPost("/create-chat")]
-        public async Task<IResult> Create()
+        public async Task<IResult> Create([FromRoute]Guid userId, ICurrentUser currentUser)
         {
-            return Results.Empty;
+            try
+            {
+                var result = await _service.Create(userId, currentUser.Id);
+                return Results.Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return Results.BadRequest(new { 
+                    Status = "create-chat-failed",
+                    Message = ex.Message,
+                });
+            }
         }
 
-        [HttpGet("/get-all-user-chats")]
-        public async Task<IResult> GetByUserId()
+        [HttpGet("/get-all-user-chats/{reversed?}")]
+        public async Task<IResult> GetByUserId(ICurrentUser currentUser, bool reversed = false)
         {
-            return Results.Empty;
+            try
+            {
+                var result = await _service.GetByUserId(currentUser.Id, reversed);
+                return Results.Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return Results.BadRequest(new { 
+                    Status = "get-chats-failed",
+                    Message = ex.Message,
+                });
+            }
         }
 
-        [HttpGet("/get-last-user-chats")]
-        public async Task<IResult> GetLastChats()
+        [HttpGet("/get-last-user-chats/{count}/{reversed}")]
+        public async Task<IResult> GetLastChats(ICurrentUser currentUser,[FromRoute]int count)
         {
-            return Results.Empty;
+            try
+            {
+                var result = await _service.GetLastChats(currentUser.Id, count);
+                return Results.Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return Results.BadRequest(new
+                {
+                    Status = "get-chats-failed",
+                    Message = ex.Message
+                });
+            }
         }
 
-        [HttpPut("/update-chat-image")]
-        public async Task<IResult> Update()
+        [HttpPut("/update-chat-image/[chatId]")]
+        public async Task<IResult> Update(ICurrentUser currentUser,[FromRoute]Guid chatId,IFormFile image)
         {
-            return Results.Empty;
+            try
+            {
+                var result = await _service.Update(currentUser.Id, chatId, image);
+                return Results.Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return Results.BadRequest(new { 
+                    Status = "update-chat-failed",
+                    Message = ex.Message,
+                });
+            }
         }
     }
 }
