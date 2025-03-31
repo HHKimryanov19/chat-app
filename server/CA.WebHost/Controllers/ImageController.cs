@@ -1,5 +1,8 @@
 ﻿using CA.Data;
+using CA.Services.Identity.Services;
 using CA.Services.Implementations;
+using CA.Shared;
+using CA.Shared.DTOs.InputModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,27 +20,74 @@ namespace CA.WebHost.Controllers
         }
 
         [HttpPost("/add-image")]
-        public async Task<IResult> Add()
+        public async Task<IResult> Add(ICurrentUser currentUser,[FromBody]ImageIM image)
         {
-            return Results.Empty;
+            try
+            {
+                var result = await _service.Create(currentUser.Id,image);
+                return Results.Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return Results.BadRequest(new {
+                    Status = "create-image-failed",
+                    Message = ex.Message
+                });
+            }
         }
 
-        [HttpGet("/get-images-by-chatId")]
-        public async Task<IResult> GetByChatId()
+        [HttpGet("/get-images-by-chatId/{chatId}")]
+        public async Task<IResult> GetByChatId(ICurrentUser currentUser,[FromRoute]Guid chatId)
         {
-            return Results.Empty;
+            try
+            {
+                var result = await _service.GetByChatId(currentUser.Id,chatId);
+                return Results.Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return Results.BadRequest(new
+                {
+                    Status = "get-images-failed",
+                    Message = ex.Message
+                });
+            }
         }
 
-        [HttpGet("/get-user-images-by-chatId")]
-        public async Task<IResult> GetUserImageByChatId()
+        [HttpGet("/get-user-images-by-chatId/{chatId}")]
+        public async Task<IResult> GetUserImageByChatId(ICurrentUser currentUser,[FromRoute]Guid chatId)
         {
-            return Results.Empty;
+            try
+            {
+                var result = await _service.GetByChatIdUserId(chatId, currentUser.Id);
+                return Results.Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return Results.BadRequest(new
+                {
+                    Status = "get-images-failed",
+                    Message = ex.Message
+                });
+            }
         }
 
-        [HttpDelete("/remove-image")]
-        public async Task<IResult> Remove()
+        [HttpDelete("/remove-image/{chatId}/{imageId}")]
+        public async Task<IResult> Remove(ICurrentUser currentUser, [FromRoute]Guid chatId, [FromRoute]Guid imageId)
         {
-            return Results.Empty;
+            try
+            {
+                var result = await _service.Remove(currentUser.Id,chatId,imageId);
+                return Results.Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return Results.BadRequest(new
+                {
+                    Status = "remove-image-failed",
+                    Message = ex.Message
+                });
+            }
         }
     }
 }

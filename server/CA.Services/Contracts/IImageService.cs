@@ -10,12 +10,12 @@ namespace CA.Services.Contracts
 {
     internal interface IImageService
     {
-        Task<List<ImageOM>> GetByChatId(Guid chatId);
+        Task<List<ImageOM>> GetByChatId(Guid? userId, Guid chatId);
 
-        Task<List<ImageOM>> GetByChatIdUserId(Guid chatId, Guid userId);
+        Task<List<ImageOM>> GetByChatIdUserId(Guid chatId, Guid? userId);
 
-        Task<bool> Remove(Guid chatId, Guid imageId);
+        Task<bool> Remove(Guid? userId, Guid chatId, Guid imageId);
 
-        Task<bool> Create(ImageIM image);
+        Task<bool> Create(Guid? userId, ImageIM image);
     }
 }
