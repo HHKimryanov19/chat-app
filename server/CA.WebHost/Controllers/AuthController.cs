@@ -17,6 +17,7 @@ namespace CA.WebHost.Controllers
             this.authServices = new AuthService(userManager, config);
         }
 
+
         [HttpPost("/auth/user-login")]
         public async Task<IResult> Login([FromBody] LoginIM loginModel)
         {

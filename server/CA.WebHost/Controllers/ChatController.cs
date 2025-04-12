@@ -2,6 +2,7 @@
 using CA.Data.Models;
 using CA.Services.Implementations;
 using CA.Shared;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,6 +20,7 @@ namespace CA.WebHost.Controllers
             _service = new ChatService(context, userManager);
         }
 
+        [Authorize]
         [HttpPost("/create-chat")]
         public async Task<IResult> Create([FromRoute]Guid userId, ICurrentUser currentUser)
         {
@@ -36,6 +38,7 @@ namespace CA.WebHost.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet("/get-all-user-chats/{reversed?}")]
         public async Task<IResult> GetByUserId(ICurrentUser currentUser, bool reversed = false)
         {
@@ -53,6 +56,7 @@ namespace CA.WebHost.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet("/get-last-user-chats/{count}/{reversed}")]
         public async Task<IResult> GetLastChats(ICurrentUser currentUser,[FromRoute]int count)
         {
@@ -71,7 +75,8 @@ namespace CA.WebHost.Controllers
             }
         }
 
-        [HttpPut("/update-chat-image/[chatId]")]
+        [Authorize]
+        [HttpPut("/update-chat-image/{chatId}")]
         public async Task<IResult> Update(ICurrentUser currentUser,[FromRoute]Guid chatId,IFormFile image)
         {
             try

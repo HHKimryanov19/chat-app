@@ -3,6 +3,7 @@ using CA.Services.Identity.Services;
 using CA.Services.Implementations;
 using CA.Shared;
 using CA.Shared.DTOs.InputModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,12 +20,13 @@ namespace CA.WebHost.Controllers
             _service = new ImageService(context, userManager);
         }
 
+        [Authorize]
         [HttpPost("/add-image")]
-        public async Task<IResult> Add(ICurrentUser currentUser,[FromBody]ImageIM image)
+        public async Task<IResult> Add([FromForm]ImageIM image, ICurrentUser currentUser)
         {
             try
             {
-                var result = await _service.Create(currentUser.Id,image);
+                var result = await _service.Create(currentUser.Id, image);
                 return Results.Ok(result);
             }
             catch (Exception ex)
@@ -36,6 +38,7 @@ namespace CA.WebHost.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet("/get-images-by-chatId/{chatId}")]
         public async Task<IResult> GetByChatId(ICurrentUser currentUser,[FromRoute]Guid chatId)
         {
@@ -54,6 +57,7 @@ namespace CA.WebHost.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet("/get-user-images-by-chatId/{chatId}")]
         public async Task<IResult> GetUserImageByChatId(ICurrentUser currentUser,[FromRoute]Guid chatId)
         {
@@ -72,6 +76,7 @@ namespace CA.WebHost.Controllers
             }
         }
 
+        [Authorize]
         [HttpDelete("/remove-image/{chatId}/{imageId}")]
         public async Task<IResult> Remove(ICurrentUser currentUser, [FromRoute]Guid chatId, [FromRoute]Guid imageId)
         {

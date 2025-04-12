@@ -5,6 +5,7 @@ using CA.Services.Implementations;
 using CA.Shared;
 using CA.Shared.DTOs.InputModels;
 using Mapster;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
@@ -22,8 +23,9 @@ namespace CA.WebHost.Controllers
             _service = new MessageService(context, userManager);
         }
 
+        [Authorize]
         [HttpPost("/add-message")]
-        public async Task<IResult> AddMessage([FromBody] MessageIM message, ICurrentUser user)
+        public async Task<IResult> AddMessage([FromForm]MessageIM message, ICurrentUser user)
         {
             try
             {
@@ -40,6 +42,7 @@ namespace CA.WebHost.Controllers
             }
         }
 
+        [Authorize]
         [HttpDelete("/delete-message/{messageId}")]
         public async Task<IResult> RemoveMessage([FromRoute] Guid messageId, ICurrentUser user)
         {
@@ -58,6 +61,7 @@ namespace CA.WebHost.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet("/get-message-by-chatId/{chatId}")]
         public async Task<IResult> GetByChatId([FromRoute] Guid chatId, ICurrentUser user)
         {
@@ -76,6 +80,7 @@ namespace CA.WebHost.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet("/get-message-by-chatId-time/{chatId}/{startDate}/{endDate?}")]
         public async Task<IResult> GetByChatIdStartEndDate([FromRoute] DateTime startDate, [FromRoute] DateTime endDate, [FromRoute] Guid chatId, ICurrentUser user)
         {
@@ -94,6 +99,7 @@ namespace CA.WebHost.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet("/get-messages-by-chatId-userId/{chatId}")]
         public async Task<IResult> GetByChatIdUserId([FromRoute] Guid chatId, ICurrentUser user)
         {
@@ -112,8 +118,9 @@ namespace CA.WebHost.Controllers
             }
         }
 
+        [Authorize]
         [HttpPut("/update-message/{messageId}")]
-        public async Task<IResult> UpdateMessage([FromBody] MessageIM message, [FromRoute] Guid messageId, ICurrentUser user)
+        public async Task<IResult> UpdateMessage([FromForm] MessageIM message, [FromRoute] Guid messageId, ICurrentUser user)
         {
             try
             {

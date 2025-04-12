@@ -431,3 +431,5 @@ C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.WebHost\bin\Debug\net8.0
 C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.WebHost\bin\Debug\net8.0\Scrutor.dll
 C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.WebHost\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
 C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.WebHost\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.WebHost\bin\Debug\net8.0\Mapster.dll
+C:\Users\Hristiyan Kimryanov\Desktop\chat-app\server\CA.WebHost\bin\Debug\net8.0\Mapster.Core.dll

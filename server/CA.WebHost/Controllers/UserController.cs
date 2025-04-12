@@ -7,6 +7,7 @@ using CA.Data;
 using Microsoft.AspNetCore.Identity;
 using CA.Shared;
 using CA.Services.Identity.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CA.WebHost.Controllers
 {
@@ -93,12 +94,13 @@ namespace CA.WebHost.Controllers
             }
         }
 
+        [Authorize]
         [HttpPut("/users/update-user/{userId}")]
-        public async Task<IResult> UpdateUser(Guid userId, [FromBody] UserIM user)
+        public async Task<IResult> UpdateUser(ICurrentUser user, [FromBody] UserIM info)
         {
             try
             {
-                var result = await _userService.UpdateUser(userId, user);
+                var result = await _userService.UpdateUser(user.Id, info);
                 return result ? Results.Ok(result) : Results.BadRequest(new 
                 { 
                     Status = "update-user-failed", 
@@ -115,12 +117,13 @@ namespace CA.WebHost.Controllers
             }
         }
 
+        [Authorize]
         [HttpDelete("/users/remove-user/{userId}")]
-        public async Task<IResult> RemoveUser(Guid userId,[FromBody] string deleteString)
+        public async Task<IResult> RemoveUser(ICurrentUser user,[FromBody] string deleteString)
         {
             try
             {
-                var result = await _userService.RemoveUser(userId, deleteString);
+                var result = await _userService.RemoveUser(user.Id, deleteString);
                 return result ? Results.Ok(result) : Results.BadRequest(new
                 {
                     Status = "delete-user-failed",

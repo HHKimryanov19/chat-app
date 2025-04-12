@@ -36,7 +36,7 @@ namespace CA.Services.Implementations
             return user.Adapt<UserOM>();
         }
 
-        public async Task<UserOM> GetUserById(Guid Id)
+        public async Task<UserOM> GetUserById(Guid? Id)
         {
             var user = await _userManager.FindByIdAsync(Id.ToString());
             if (user == null)
@@ -69,7 +69,7 @@ namespace CA.Services.Implementations
             return users.Adapt<List<UserOM>>();
         }
 
-        public async Task<bool> RemoveUser(Guid userId, string deleteString)
+        public async Task<bool> RemoveUser(Guid? userId, string deleteString)
         {
             var user = await _userManager.FindByIdAsync(userId.ToString());
             if (user == null)
@@ -87,7 +87,7 @@ namespace CA.Services.Implementations
             return result.Succeeded;
         }
 
-        public async Task<bool> UpdateUser(Guid userId, UserIM user)
+        public async Task<bool> UpdateUser(Guid? userId, UserIM user)
         {
             var currentUser = await _userManager.FindByIdAsync(userId.ToString());
             if (currentUser == null || user == null)

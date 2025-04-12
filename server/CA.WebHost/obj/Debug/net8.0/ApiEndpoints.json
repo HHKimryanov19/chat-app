@@ -1,5 +1,57 @@
 [
   {
+    "ContainingType": "CA.WebHost.Controllers.ImageController",
+    "Method": "Add",
+    "RelativePath": "add-image",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Content",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "ChatId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "currentUser",
+        "Type": "CA.Shared.ICurrentUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CA.WebHost.Controllers.MessageController",
+    "Method": "AddMessage",
+    "RelativePath": "add-message",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Text",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ChatId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "user",
+        "Type": "CA.Shared.ICurrentUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CA.WebHost.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "auth/user-login",
@@ -25,6 +77,393 @@
     "Parameters": [
       {
         "Name": "userIM",
+        "Type": "CA.Shared.DTOs.InputModels.UserIM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CA.WebHost.Controllers.ChatController",
+    "Method": "Create",
+    "RelativePath": "create-chat",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "currentUser",
+        "Type": "CA.Shared.ICurrentUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CA.WebHost.Controllers.MessageController",
+    "Method": "RemoveMessage",
+    "RelativePath": "delete-message/{messageId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "messageId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "user",
+        "Type": "CA.Shared.ICurrentUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CA.WebHost.Controllers.ChatController",
+    "Method": "GetByUserId",
+    "RelativePath": "get-all-user-chats/{reversed}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "currentUser",
+        "Type": "CA.Shared.ICurrentUser",
+        "IsRequired": true
+      },
+      {
+        "Name": "reversed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CA.WebHost.Controllers.ImageController",
+    "Method": "GetByChatId",
+    "RelativePath": "get-images-by-chatId/{chatId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "currentUser",
+        "Type": "CA.Shared.ICurrentUser",
+        "IsRequired": true
+      },
+      {
+        "Name": "chatId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CA.WebHost.Controllers.ChatController",
+    "Method": "GetLastChats",
+    "RelativePath": "get-last-user-chats/{count}/{reversed}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "currentUser",
+        "Type": "CA.Shared.ICurrentUser",
+        "IsRequired": true
+      },
+      {
+        "Name": "count",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "reversed",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CA.WebHost.Controllers.MessageController",
+    "Method": "GetByChatIdStartEndDate",
+    "RelativePath": "get-message-by-chatId-time/{chatId}/{startDate}/{endDate}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "startDate",
+        "Type": "System.DateTime",
+        "IsRequired": true
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "chatId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "user",
+        "Type": "CA.Shared.ICurrentUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CA.WebHost.Controllers.MessageController",
+    "Method": "GetByChatId",
+    "RelativePath": "get-message-by-chatId/{chatId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "user",
+        "Type": "CA.Shared.ICurrentUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CA.WebHost.Controllers.MessageController",
+    "Method": "GetByChatIdUserId",
+    "RelativePath": "get-messages-by-chatId-userId/{chatId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "user",
+        "Type": "CA.Shared.ICurrentUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CA.WebHost.Controllers.ImageController",
+    "Method": "GetUserImageByChatId",
+    "RelativePath": "get-user-images-by-chatId/{chatId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "currentUser",
+        "Type": "CA.Shared.ICurrentUser",
+        "IsRequired": true
+      },
+      {
+        "Name": "chatId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CA.WebHost.Controllers.ImageController",
+    "Method": "Remove",
+    "RelativePath": "remove-image/{chatId}/{imageId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "currentUser",
+        "Type": "CA.Shared.ICurrentUser",
+        "IsRequired": true
+      },
+      {
+        "Name": "chatId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "imageId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CA.WebHost.Controllers.ChatController",
+    "Method": "Update",
+    "RelativePath": "update-chat-image/{chatId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "currentUser",
+        "Type": "CA.Shared.ICurrentUser",
+        "IsRequired": true
+      },
+      {
+        "Name": "chatId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CA.WebHost.Controllers.MessageController",
+    "Method": "UpdateMessage",
+    "RelativePath": "update-message/{messageId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Text",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ChatId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "messageId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "user",
+        "Type": "CA.Shared.ICurrentUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CA.WebHost.Controllers.UserController",
+    "Method": "GetUserByEmail",
+    "RelativePath": "users/get-user-by-email/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CA.WebHost.Controllers.UserController",
+    "Method": "GetUserByUserName",
+    "RelativePath": "users/get-user-by-username/{userName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CA.WebHost.Controllers.UserController",
+    "Method": "GetUserById",
+    "RelativePath": "users/get-user/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CA.WebHost.Controllers.UserController",
+    "Method": "GetUsers",
+    "RelativePath": "users/get-users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CA.WebHost.Controllers.UserController",
+    "Method": "RemoveUser",
+    "RelativePath": "users/remove-user/{userId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "deleteString",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CA.WebHost.Controllers.UserController",
+    "Method": "UpdateUser",
+    "RelativePath": "users/update-user/{userId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "user",
         "Type": "CA.Shared.DTOs.InputModels.UserIM",
         "IsRequired": true
       }
