@@ -1,5 +1,10 @@
 ﻿using CA.Data;
+using CA.Data.Models;
+using CA.Services.Identity.Services;
 using CA.Services.Implementations;
+using CA.Shared;
+using CA.Shared.DTOs.InputModels;
+using Mapster;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
@@ -18,39 +23,111 @@ namespace CA.WebHost.Controllers
         }
 
         [HttpPost("/add-message")]
-        public async Task<IResult> AddMessage()
+        public async Task<IResult> AddMessage([FromBody] MessageIM message, ICurrentUser user)
         {
-            return Results.Empty;
+            try
+            {
+                var result = await _service.CreateMessage(message, user.Id);
+                return Results.Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return Results.BadRequest(new
+                {
+                    Status = "create-message-failed",
+                    Message = ex.Message,
+                });
+            }
         }
 
-        [HttpDelete("/delete-message")]
-        public async Task<IResult> RemoveMessage()
+        [HttpDelete("/delete-message/{messageId}")]
+        public async Task<IResult> RemoveMessage([FromRoute] Guid messageId, ICurrentUser user)
         {
-            return Results.Empty;
+            try
+            {
+                var result = await _service.DeleteMessage(messageId, user.Id);
+                return Results.Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return Results.BadRequest(new
+                {
+                    Status = "remove-message-failed",
+                    Message = ex.Message,
+                });
+            }
         }
 
-        [HttpGet("/get-message-by-chatId")]
-        public async Task<IResult> GetByChatId()
+        [HttpGet("/get-message-by-chatId/{chatId}")]
+        public async Task<IResult> GetByChatId([FromRoute] Guid chatId, ICurrentUser user)
         {
-            return Results.Empty;
+            try
+            {
+                var result = await _service.GetByChatId(chatId, user.Id);
+                return Results.Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return Results.BadRequest(new
+                {
+                    Status = "get-by-chatId-messages-failed",
+                    Message = ex.Message,
+                });
+            }
         }
 
-        [HttpGet("/get-message-by-chatId-and-time-period")]
-        public async Task<IResult> GetByChatIdDate()
+        [HttpGet("/get-message-by-chatId-time/{chatId}/{startDate}/{endDate?}")]
+        public async Task<IResult> GetByChatIdStartEndDate([FromRoute] DateTime startDate, [FromRoute] DateTime endDate, [FromRoute] Guid chatId, ICurrentUser user)
         {
-            return Results.Empty;
+            try
+            {
+                var result = await _service.GetByChatIdDate(chatId, user.Id, startDate, endDate);
+                return Results.Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return Results.BadRequest(new
+                {
+                    Status = "get-by-chatId-date-messages-failed",
+                    Message = ex.Message,
+                });
+            }
         }
 
-        [HttpGet("/get-user-message-by-chatId")]
-        public async Task<IResult> GetByChatIdUserId()
+        [HttpGet("/get-messages-by-chatId-userId/{chatId}")]
+        public async Task<IResult> GetByChatIdUserId([FromRoute] Guid chatId, ICurrentUser user)
         {
-            return Results.Empty;
+            try
+            {
+                var result = await _service.GetByChatIdUserId(chatId, user.Id);
+                return Results.Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return Results.BadRequest(new
+                {
+                    Status = "get-by-chatId-userId-messages-failed",
+                    Message = ex.Message,
+                });
+            }
         }
 
-        [HttpPut("/update-message")]
-        public async Task<IResult> UpdateMessage()
+        [HttpPut("/update-message/{messageId}")]
+        public async Task<IResult> UpdateMessage([FromBody] MessageIM message, [FromRoute] Guid messageId, ICurrentUser user)
         {
-            return Results.Empty;
+            try
+            {
+                var result = await _service.UpdateMessage(message, messageId, user.Id);
+                return Results.Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return Results.BadRequest(new
+                {
+                    Status = "update-message-failed",
+                    Message = ex.Message,
+                });
+            }
         }
     }
 }

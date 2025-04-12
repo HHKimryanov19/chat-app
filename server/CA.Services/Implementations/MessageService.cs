@@ -28,7 +28,7 @@ namespace CA.Services.Implementations
             _userManager = userManager;
         }
 
-        public async Task<bool> CreateMessage(MessageIM message, Guid userId)
+        public async Task<bool> CreateMessage(MessageIM message, Guid? userId)
         {
             var user = await _userManager.FindByIdAsync(userId.ToString());
             var chat = await _context.Chats.FindAsync(message.ChatId);
@@ -59,7 +59,7 @@ namespace CA.Services.Implementations
         }
 
         //to do: last added message deleted
-        public async Task<bool> DeleteMessage(Guid messageId, Guid userId)
+        public async Task<bool> DeleteMessage(Guid messageId, Guid? userId)
         {
             var user = await _userManager.FindByIdAsync(userId.ToString());
             var message = await _context.Messages.FindAsync(messageId.ToString());
@@ -80,7 +80,7 @@ namespace CA.Services.Implementations
         }
 
         //to do: try to implement pagination 3-5
-        public async Task<List<MessageOM>> GetByChatId(Guid chatId, Guid userId)
+        public async Task<List<MessageOM>> GetByChatId(Guid chatId, Guid? userId)
         {
             var user = await _userManager.FindByIdAsync(userId.ToString());
             var chat = await _context.Chats.FindAsync(chatId.ToString());
@@ -100,7 +100,7 @@ namespace CA.Services.Implementations
             return messages.Adapt<List<MessageOM>>();
         }
 
-        public async Task<List<MessageOM>> GetByChatIdDate(Guid chatId, Guid userId, DateTime startDate, DateTime endDate)
+        public async Task<List<MessageOM>> GetByChatIdDate(Guid chatId, Guid? userId, DateTime startDate, DateTime? endDate)
         {
             var user = await _userManager.FindByIdAsync(userId.ToString());
             var chat = await _context.Chats.FindAsync(chatId.ToString());
@@ -115,6 +115,7 @@ namespace CA.Services.Implementations
                 return new List<MessageOM>();
             }
 
+            endDate = endDate == null ? DateTime.Now : endDate;
             var messages = await _context.Messages
                 .Where(m => m.ChatId == chatId)
                 .Where(m => m.SendOn > startDate && m.SendOn < endDate)
@@ -123,7 +124,7 @@ namespace CA.Services.Implementations
             return messages.Adapt<List<MessageOM>>();
         }
 
-        public async Task<List<MessageOM>> GetByChatIdUserId(Guid chatId, Guid userId)
+        public async Task<List<MessageOM>> GetByChatIdUserId(Guid chatId, Guid? userId)
         {
             var user = await _userManager.FindByIdAsync(userId.ToString());
             var chat = await _context.Chats.FindAsync(chatId.ToString());
@@ -146,7 +147,7 @@ namespace CA.Services.Implementations
             return messages.Adapt<List<MessageOM>>();
         }
 
-        public async Task<bool> UpdateMessage(MessageIM newInfo, Guid messageId, Guid userId)
+        public async Task<bool> UpdateMessage(MessageIM newInfo, Guid messageId, Guid? userId)
         {
             var user = await _userManager.FindByIdAsync(userId.ToString());
             var message = await _context.Messages.FindAsync(messageId.ToString());
