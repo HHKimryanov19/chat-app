@@ -11,11 +11,11 @@ namespace CA.Shared.DTOs.OutputModels
     {
         public Guid Id { get; set; }
 
-        public Guid User { get; set; }
+        public Guid? User { get; set; }
 
-        public DateTime LastMessageDate { get; set; }
+        public DateTime? LastMessageDate { get; set; }
 
-        public Guid LastMessageId { get; set; }
+        public Guid? LastMessageId { get; set; }
 
         public byte[] Picture { get; set; } = default!;
 

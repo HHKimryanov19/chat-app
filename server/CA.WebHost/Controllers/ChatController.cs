@@ -21,7 +21,7 @@ namespace CA.WebHost.Controllers
         }
 
         [Authorize]
-        [HttpPost("/create-chat")]
+        [HttpPost("/create-chat/{userId}")]
         public async Task<IResult> Create([FromRoute]Guid userId, ICurrentUser currentUser)
         {
             try
@@ -57,12 +57,12 @@ namespace CA.WebHost.Controllers
         }
 
         [Authorize]
-        [HttpGet("/get-last-user-chats/{count}/{reversed}")]
-        public async Task<IResult> GetLastChats(ICurrentUser currentUser,[FromRoute]int count)
+        [HttpGet("/get-last-user-chats/{count}/{reversed?}")]
+        public async Task<IResult> GetLastChats(ICurrentUser currentUser,[FromRoute]int count, [FromRoute]bool reversed = false)
         {
             try
             {
-                var result = await _service.GetLastChats(currentUser.Id, count);
+                var result = await _service.GetLastChats(currentUser.Id, count,reversed);
                 return Results.Ok(result);
             }
             catch (Exception ex)

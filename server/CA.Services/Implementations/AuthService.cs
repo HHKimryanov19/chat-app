@@ -18,7 +18,6 @@ namespace CA.Services.Implementations
     public class AuthService: IAuthService
     {
         public IConfiguration config { get; set; }
-
         public UserManager<ApplicationUser> userManager { get; set; }
 
         public AuthService(UserManager<ApplicationUser> userManager, IConfiguration configuration)

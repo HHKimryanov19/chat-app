@@ -16,11 +16,6 @@
         "Name": "ChatId",
         "Type": "System.Guid",
         "IsRequired": false
-      },
-      {
-        "Name": "currentUser",
-        "Type": "CA.Shared.ICurrentUser",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -42,11 +37,6 @@
         "Name": "ChatId",
         "Type": "System.Guid",
         "IsRequired": false
-      },
-      {
-        "Name": "user",
-        "Type": "CA.Shared.ICurrentUser",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -86,7 +76,7 @@
   {
     "ContainingType": "CA.WebHost.Controllers.ChatController",
     "Method": "Create",
-    "RelativePath": "create-chat",
+    "RelativePath": "create-chat/{userId}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -94,11 +84,6 @@
       {
         "Name": "userId",
         "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "currentUser",
-        "Type": "CA.Shared.ICurrentUser",
         "IsRequired": true
       }
     ],
@@ -116,11 +101,6 @@
         "Name": "messageId",
         "Type": "System.Guid",
         "IsRequired": true
-      },
-      {
-        "Name": "user",
-        "Type": "CA.Shared.ICurrentUser",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -133,11 +113,6 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [
-      {
-        "Name": "currentUser",
-        "Type": "CA.Shared.ICurrentUser",
-        "IsRequired": true
-      },
       {
         "Name": "reversed",
         "Type": "System.Boolean",
@@ -155,11 +130,6 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "currentUser",
-        "Type": "CA.Shared.ICurrentUser",
-        "IsRequired": true
-      },
-      {
         "Name": "chatId",
         "Type": "System.Guid",
         "IsRequired": true
@@ -176,19 +146,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "currentUser",
-        "Type": "CA.Shared.ICurrentUser",
-        "IsRequired": true
-      },
-      {
         "Name": "count",
         "Type": "System.Int32",
         "IsRequired": true
       },
       {
         "Name": "reversed",
-        "Type": "",
-        "IsRequired": true
+        "Type": "System.Boolean",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -215,11 +180,6 @@
         "Name": "chatId",
         "Type": "System.Guid",
         "IsRequired": true
-      },
-      {
-        "Name": "user",
-        "Type": "CA.Shared.ICurrentUser",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -235,11 +195,6 @@
       {
         "Name": "chatId",
         "Type": "System.Guid",
-        "IsRequired": true
-      },
-      {
-        "Name": "user",
-        "Type": "CA.Shared.ICurrentUser",
         "IsRequired": true
       }
     ],
@@ -257,11 +212,6 @@
         "Name": "chatId",
         "Type": "System.Guid",
         "IsRequired": true
-      },
-      {
-        "Name": "user",
-        "Type": "CA.Shared.ICurrentUser",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -274,11 +224,6 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [
-      {
-        "Name": "currentUser",
-        "Type": "CA.Shared.ICurrentUser",
-        "IsRequired": true
-      },
       {
         "Name": "chatId",
         "Type": "System.Guid",
@@ -295,11 +240,6 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [
-      {
-        "Name": "currentUser",
-        "Type": "CA.Shared.ICurrentUser",
-        "IsRequired": true
-      },
       {
         "Name": "chatId",
         "Type": "System.Guid",
@@ -321,11 +261,6 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [
-      {
-        "Name": "currentUser",
-        "Type": "CA.Shared.ICurrentUser",
-        "IsRequired": true
-      },
       {
         "Name": "chatId",
         "Type": "System.Guid",
@@ -360,11 +295,6 @@
       {
         "Name": "messageId",
         "Type": "System.Guid",
-        "IsRequired": true
-      },
-      {
-        "Name": "user",
-        "Type": "CA.Shared.ICurrentUser",
         "IsRequired": true
       }
     ],
@@ -437,13 +367,13 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      },
-      {
         "Name": "deleteString",
         "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "",
         "IsRequired": true
       }
     ],
@@ -458,13 +388,38 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
-        "Type": "System.Guid",
-        "IsRequired": true
+        "Name": "FirstName",
+        "Type": "System.String",
+        "IsRequired": false
       },
       {
-        "Name": "user",
-        "Type": "CA.Shared.DTOs.InputModels.UserIM",
+        "Name": "SecondName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Age",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "",
         "IsRequired": true
       }
     ],

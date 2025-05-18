@@ -33,7 +33,7 @@ namespace CA.Services.Identity.Services
                         .FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?
                         .Value;
 
-                    if(string.IsNullOrEmpty(rawUserId) && Guid.TryParse(rawUserId, out var parseUserId))
+                    if(!string.IsNullOrWhiteSpace(rawUserId) && Guid.TryParse(rawUserId, out var parseUserId))
                     {
                         this.userId = parseUserId;
                     }

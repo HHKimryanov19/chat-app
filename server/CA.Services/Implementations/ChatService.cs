@@ -7,6 +7,7 @@ using CA.Shared.DTOs.OutputModels;
 using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -48,7 +49,7 @@ namespace CA.Services.Implementations
             return true;
         }
 
-        public async Task<List<ChatOM>> GetByUserId(Guid? userId,bool reversed)
+        public async Task<List<ChatOM>> GetByUserId(Guid? userId, bool reversed)
         {
             var user = await _userManager.FindByIdAsync(userId.ToString());
 
@@ -60,11 +61,25 @@ namespace CA.Services.Implementations
             var chats = _context.Chats.Where(c => c.FirstUserId == userId || c.SecondUserId == userId);
 
             chats = reversed ? chats.OrderBy(c => c.LastMessageDate) : chats.OrderByDescending(c => c.LastMessageDate);
-
-            return chats.ToList().Adapt<List<ChatOM>>();
+            return await MapChats(userId, chats);
         }
 
-        public async Task<List<ChatOM>> GetLastChats(Guid? userId,int numberOfChats, bool reversed = false)
+        private async Task<List<ChatOM>> MapChats(Guid? userId, IQueryable<Chat> chats)
+        {
+            var chatsOM = chats.ToList().Adapt<List<ChatOM>>();
+
+            for (int i = 0; i < chatsOM.Count; i++)
+            {
+                var lastMessage = await _context.Messages.Where(m => m.ChatId == chatsOM[i].Id).OrderByDescending(m => m.SendOn).FirstOrDefaultAsync();
+                chatsOM[i].User = (chats.ToList()[i].FirstUserId == userId) ? chats.ToList()[i].SecondUserId : userId;
+                chatsOM[i].LastMessageId = lastMessage?.Id;
+                chatsOM[i].LastMessageDate = lastMessage?.SendOn;
+            }
+
+            return chatsOM;
+        }
+
+        public async Task<List<ChatOM>> GetLastChats(Guid? userId, int numberOfChats, bool reversed)
         {
             var user = await _userManager.FindByIdAsync(userId.ToString());
 
@@ -76,8 +91,7 @@ namespace CA.Services.Implementations
             var chats = _context.Chats.Where(c => c.FirstUserId == userId || c.SecondUserId == userId);
 
             chats = reversed ? chats.OrderBy(c => c.LastMessageDate) : chats.OrderByDescending(c => c.LastMessageDate);
-
-            return chats.Take(numberOfChats).ToList().Adapt<List<ChatOM>>();
+            return await MapChats(userId, chats.Take(numberOfChats));
         }
 
         public async Task<bool> Update(Guid? userId, Guid? chatId, IFormFile image)

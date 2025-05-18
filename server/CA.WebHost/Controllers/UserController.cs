@@ -96,7 +96,7 @@ namespace CA.WebHost.Controllers
 
         [Authorize]
         [HttpPut("/users/update-user/{userId}")]
-        public async Task<IResult> UpdateUser(ICurrentUser user, [FromBody] UserIM info)
+        public async Task<IResult> UpdateUser(ICurrentUser user, [FromForm] UserIM info)
         {
             try
             {
@@ -119,7 +119,7 @@ namespace CA.WebHost.Controllers
 
         [Authorize]
         [HttpDelete("/users/remove-user/{userId}")]
-        public async Task<IResult> RemoveUser(ICurrentUser user,[FromBody] string deleteString)
+        public async Task<IResult> RemoveUser(ICurrentUser user,[FromForm] string deleteString)
         {
             try
             {

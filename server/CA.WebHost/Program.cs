@@ -15,8 +15,8 @@ namespace CA.WebHost
 
             // Add services to the container.
 
-            builder.Services.AddControllers();
             builder.Services.AddDataLayer(builder.Configuration);
+            builder.Services.AddServiceLayer();
             builder.Services.AddHttpContextAccessor();
             builder.Services.AddAuthentication();
 
@@ -36,6 +36,8 @@ namespace CA.WebHost
 
             builder.Services.ConfigureJwt(builder);
             builder.Services.AddAuthorization();
+
+            builder.Services.AddControllers();
 
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(options =>
@@ -67,9 +69,6 @@ namespace CA.WebHost
                         .AllowAnyHeader();
                 });
             });
-
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
 

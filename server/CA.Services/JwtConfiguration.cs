@@ -13,7 +13,7 @@ namespace CA.Services
 {
     public static class JwtConfiguration
     {
-        public static IServiceCollection ConfigureJwt(this IServiceCollection services,WebApplicationBuilder builder)
+        public static IServiceCollection ConfigureJwt(this IServiceCollection services, WebApplicationBuilder builder)
         {
             services.AddAuthentication(op =>
             {
