@@ -16,6 +16,7 @@ using System.Threading.Tasks;
 
 namespace CA.Services.Implementations
 {
+    //To do: add getChat method!!!!!
     public class ChatService : IChatService
     {
 

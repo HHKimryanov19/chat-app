@@ -62,7 +62,7 @@ namespace CA.Services.Implementations
         public async Task<bool> DeleteMessage(Guid messageId, Guid? userId)
         {
             var user = await _userManager.FindByIdAsync(userId.ToString());
-            var message = await _context.Messages.FindAsync(messageId.ToString());
+            var message = await _context.Messages.FindAsync(messageId);
 
             if (message == null || user == null)
             {
@@ -83,7 +83,7 @@ namespace CA.Services.Implementations
         public async Task<List<MessageOM>> GetByChatId(Guid chatId, Guid? userId)
         {
             var user = await _userManager.FindByIdAsync(userId.ToString());
-            var chat = await _context.Chats.FindAsync(chatId.ToString());
+            var chat = await _context.Chats.FindAsync(chatId);
 
             if (chat == null || user == null)
             {
@@ -103,7 +103,7 @@ namespace CA.Services.Implementations
         public async Task<List<MessageOM>> GetByChatIdDate(Guid chatId, Guid? userId, DateTime startDate, DateTime? endDate)
         {
             var user = await _userManager.FindByIdAsync(userId.ToString());
-            var chat = await _context.Chats.FindAsync(chatId.ToString());
+            var chat = await _context.Chats.FindAsync(chatId);
 
             if (chat == null || user == null)
             {
@@ -127,7 +127,7 @@ namespace CA.Services.Implementations
         public async Task<List<MessageOM>> GetByChatIdUserId(Guid chatId, Guid? userId)
         {
             var user = await _userManager.FindByIdAsync(userId.ToString());
-            var chat = await _context.Chats.FindAsync(chatId.ToString());
+            var chat = await _context.Chats.FindAsync(chatId);
 
             if (chat == null || user == null)
             {
@@ -150,7 +150,7 @@ namespace CA.Services.Implementations
         public async Task<bool> UpdateMessage(MessageIM newInfo, Guid messageId, Guid? userId)
         {
             var user = await _userManager.FindByIdAsync(userId.ToString());
-            var message = await _context.Messages.FindAsync(messageId.ToString());
+            var message = await _context.Messages.FindAsync(messageId);
 
             if (message == null || user == null)
             {

@@ -29,14 +29,14 @@ namespace CA.Services.Implementations
         public async Task<bool> Create(Guid? userId, ImageIM image)
         {
             var user = await _userManager.FindByIdAsync(userId.ToString());
-            var chat = await _context.Chats.FindAsync(image.ChatId.ToString());
+            var chat = await _context.Chats.FindAsync(image.ChatId);
 
             if (user == null || chat == null)
             {
                 return false;
             }
 
-            if (chat.FirstUser != user || chat.SecondUser != user)
+            if (chat.FirstUser != user && chat.SecondUser != user)
             {
                 return false;
             }
@@ -63,14 +63,14 @@ namespace CA.Services.Implementations
         public async Task<List<ImageOM>> GetByChatId(Guid? userId, Guid chatId)
         {
             var user = await _userManager.FindByIdAsync(userId.ToString());
-            var chat = await _context.Chats.FindAsync(chatId.ToString());
+            var chat = await _context.Chats.FindAsync(chatId);
 
             if (user == null || chat == null)
             {
                 return new List<ImageOM>();
             }
 
-            if (chat.FirstUser != user || chat.SecondUser != user)
+            if (chat.FirstUser != user && chat.SecondUser != user)
             {
                 return new List<ImageOM>();
             }
@@ -82,14 +82,14 @@ namespace CA.Services.Implementations
         public async Task<List<ImageOM>> GetByChatIdUserId(Guid chatId, Guid? userId)
         {
             var user = await _userManager.FindByIdAsync(userId.ToString());
-            var chat = await _context.Chats.FindAsync(chatId.ToString());
+            var chat = await _context.Chats.FindAsync(chatId);
 
             if (user == null || chat == null)
             {
                 return new List<ImageOM>();
             }
 
-            if (chat.FirstUser != user || chat.SecondUser != user)
+            if (chat.FirstUser != user && chat.SecondUser != user)
             {
                 return new List<ImageOM>();
             }
@@ -101,15 +101,15 @@ namespace CA.Services.Implementations
         public async Task<bool> Remove(Guid? userId, Guid chatId, Guid imageId)
         {
             var user = await _userManager.FindByIdAsync(userId.ToString());
-            var chat = await _context.Chats.FindAsync(chatId.ToString());
-            var image = await _context.Images.FindAsync(imageId.ToString());
+            var chat = await _context.Chats.FindAsync(chatId);
+            var image = await _context.Images.FindAsync(imageId);
 
             if (user == null || chat == null || image == null)
             {
                 return false;
             }
 
-            if (chat.FirstUser != user || chat.SecondUser != user)
+            if (chat.FirstUser != user && chat.SecondUser != user)
             {
                 return false;
             }
