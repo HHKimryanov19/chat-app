@@ -361,7 +361,7 @@
   {
     "ContainingType": "CA.WebHost.Controllers.UserController",
     "Method": "RemoveUser",
-    "RelativePath": "users/remove-user/{userId}",
+    "RelativePath": "users/remove-user",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -370,11 +370,6 @@
         "Name": "deleteString",
         "Type": "System.String",
         "IsRequired": false
-      },
-      {
-        "Name": "userId",
-        "Type": "",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -382,7 +377,7 @@
   {
     "ContainingType": "CA.WebHost.Controllers.UserController",
     "Method": "UpdateUser",
-    "RelativePath": "users/update-user/{userId}",
+    "RelativePath": "users/update-user",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -416,11 +411,6 @@
         "Name": "Password",
         "Type": "System.String",
         "IsRequired": false
-      },
-      {
-        "Name": "userId",
-        "Type": "",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []

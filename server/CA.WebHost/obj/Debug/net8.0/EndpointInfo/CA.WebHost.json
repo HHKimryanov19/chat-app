@@ -664,8 +664,19 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
           }
-        }
+        },
+        "security": [
+          {
+            "oauth2": [ ]
+          }
+        ]
       }
     },
     "/users/get-user/{Id}": {
@@ -687,8 +698,19 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
           }
-        }
+        },
+        "security": [
+          {
+            "oauth2": [ ]
+          }
+        ]
       }
     },
     "/users/get-user-by-username/{userName}": {
@@ -709,8 +731,19 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
           }
-        }
+        },
+        "security": [
+          {
+            "oauth2": [ ]
+          }
+        ]
       }
     },
     "/users/get-user-by-email/{email}": {
@@ -735,20 +768,10 @@
         }
       }
     },
-    "/users/update-user/{userId}": {
+    "/users/update-user": {
       "put": {
         "tags": [
           "User"
-        ],
-        "parameters": [
-          {
-            "name": "userId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "requestBody": {
           "content": {
@@ -818,20 +841,10 @@
         ]
       }
     },
-    "/users/remove-user/{userId}": {
+    "/users/remove-user": {
       "delete": {
         "tags": [
           "User"
-        ],
-        "parameters": [
-          {
-            "name": "userId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "requestBody": {
           "content": {

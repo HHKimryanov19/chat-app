@@ -22,6 +22,7 @@ namespace CA.WebHost.Controllers
             _userService = new UserService(context, userManager);
         }
 
+        [Authorize]
         [HttpGet("/users/get-users")]
         public async Task<IResult> GetUsers()
         {
@@ -40,8 +41,9 @@ namespace CA.WebHost.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet("/users/get-user/{Id}")]
-        public async Task<IResult> GetUserById(Guid Id)
+        public async Task<IResult> GetUserById([FromRoute]Guid Id)
         {
             try
             {
@@ -58,8 +60,9 @@ namespace CA.WebHost.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet("/users/get-user-by-username/{userName}")]
-        public async Task<IResult> GetUserByUserName(string userName)
+        public async Task<IResult> GetUserByUserName([FromRoute]string userName)
         {
             try
             {
@@ -76,8 +79,9 @@ namespace CA.WebHost.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet("/users/get-user-by-email/{email}")]
-        public async Task<IResult> GetUserByEmail(string email)
+        public async Task<IResult> GetUserByEmail([FromRoute]string email)
         {
             try
             {
@@ -95,7 +99,7 @@ namespace CA.WebHost.Controllers
         }
 
         [Authorize]
-        [HttpPut("/users/update-user/{userId}")]
+        [HttpPut("/users/update-user")]
         public async Task<IResult> UpdateUser(ICurrentUser user, [FromForm] UserIM info)
         {
             try
@@ -118,7 +122,7 @@ namespace CA.WebHost.Controllers
         }
 
         [Authorize]
-        [HttpDelete("/users/remove-user/{userId}")]
+        [HttpDelete("/users/remove-user")]
         public async Task<IResult> RemoveUser(ICurrentUser user,[FromForm] string deleteString)
         {
             try

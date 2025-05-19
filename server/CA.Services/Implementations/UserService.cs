@@ -101,6 +101,13 @@ namespace CA.Services.Implementations
             currentUser.Email = user.Email != null || user.Email != "" ? user.Email : currentUser.Email;
             currentUser.Age = user.Age > 0 ? user.Age: currentUser.Age;
 
+            if (user.Image != null)
+            {
+                var imageStream = new MemoryStream();
+                user.Image.CopyTo(imageStream);
+                currentUser.Image = imageStream.ToArray();
+            }
+
             var result = await _userManager.UpdateAsync(currentUser);
             return result.Succeeded;
         }

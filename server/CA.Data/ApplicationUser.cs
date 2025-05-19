@@ -14,6 +14,8 @@ namespace CA.Data
 
         public string? SecondName { get; set; }
 
+        public byte[]? Image { get; set; }
+
         public int Age { get; set; }
 
         public ICollection<Message> Messages { get; set; } = new List<Message>();

@@ -28,7 +28,7 @@ namespace CA.Services.Implementations
             _userManager = userManager;
         }
 
-        public async Task<bool> CreateMessage(MessageIM message, Guid? userId)
+        public async Task<bool> Create(MessageIM message, Guid? userId)
         {
             var user = await _userManager.FindByIdAsync(userId.ToString());
             var chat = await _context.Chats.FindAsync(message.ChatId);
@@ -58,7 +58,6 @@ namespace CA.Services.Implementations
             return true;
         }
 
-        //to do: last added message deleted
         public async Task<bool> DeleteMessage(Guid messageId, Guid? userId)
         {
             var user = await _userManager.FindByIdAsync(userId.ToString());

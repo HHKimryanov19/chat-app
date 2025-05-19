@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,5 +22,7 @@ namespace CA.Shared.DTOs.InputModels
         public string? Email { get; set; }
 
         public string? Password { get; set; }
+
+        public IFormFile? Image { get; set; }
     }
 }

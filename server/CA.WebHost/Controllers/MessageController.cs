@@ -29,7 +29,7 @@ namespace CA.WebHost.Controllers
         {
             try
             {
-                var result = await _service.CreateMessage(message, user.Id);
+                var result = await _service.Create(message, user.Id);
                 return Results.Ok(result);
             }
             catch (Exception ex)

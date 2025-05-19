@@ -16,7 +16,7 @@ namespace CA.Services.Contracts
 
         Task<List<MessageOM>> GetByChatIdDate(Guid chatId, Guid? userId, DateTime startDate, DateTime? endDate);
 
-        Task<bool> CreateMessage(MessageIM message, Guid? userId);
+        Task<bool> Create(MessageIM message, Guid? userId);
 
         Task<bool> UpdateMessage(MessageIM newInfo, Guid messageId, Guid? userId);
 

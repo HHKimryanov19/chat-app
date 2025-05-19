@@ -16,7 +16,6 @@ using System.Threading.Tasks;
 
 namespace CA.Services.Implementations
 {
-    //To do: add getChat method!!!!!
     public class ChatService : IChatService
     {
 
@@ -73,8 +72,7 @@ namespace CA.Services.Implementations
             {
                 var lastMessage = await _context.Messages.Where(m => m.ChatId == chatsOM[i].Id).OrderByDescending(m => m.SendOn).FirstOrDefaultAsync();
                 chatsOM[i].User = (chats.ToList()[i].FirstUserId == userId) ? chats.ToList()[i].SecondUserId : userId;
-                chatsOM[i].LastMessageId = lastMessage?.Id;
-                chatsOM[i].LastMessageDate = lastMessage?.SendOn;
+                chatsOM[i].LastMessage = lastMessage.Adapt<MessageOM>();
             }
 
             return chatsOM;

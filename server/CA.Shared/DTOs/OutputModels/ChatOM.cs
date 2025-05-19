@@ -13,9 +13,7 @@ namespace CA.Shared.DTOs.OutputModels
 
         public Guid? User { get; set; }
 
-        public DateTime? LastMessageDate { get; set; }
-
-        public Guid? LastMessageId { get; set; }
+        public MessageOM? LastMessage { get; set; }
 
         public byte[] Picture { get; set; } = default!;
 
